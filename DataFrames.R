@@ -1,0 +1,24 @@
+emp<-data.frame(
+  Name=c("Sufiyan","Shreyas","Neeraj"),
+  Id=c(123,234,345),
+  Salary=c("150k","80k","90k")
+)
+emp.new<-data.frame(
+  Name=c("Roshan","Karthik","Satish","Tayyab"),
+  Id=c(456,567,678,789),
+  Salary=c("100k","80k","80k","80k")
+)
+emp<-rbind(emp,emp.new)
+emp.old<-data.frame(
+  Department=c("HR","Finance","IT","Safety","Data management","Promotions","Hiring"),
+  CGPA=c(9.52,9.31,9.56,9.32,9.78,8.56,9.35)
+)
+emp<-cbind(emp,emp.old)
+emp$Age=c(19,18,18,18,18,18,18)
+print(emp)
+res1=data.frame(emp$Name,emp$Salary)
+print(res)
+res2=emp[1:2,]
+print(res2)
+res3=emp[c(1,4),c(1,3)]
+print(res3)

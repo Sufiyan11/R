@@ -1,0 +1,5 @@
+weight=matrix(c(49,63,40,15,17,9,13,14,8),nrow=3,ncol=3,byrow=TRUE)
+color=c("red","orange","yellow")
+mon=c("Dec","Jan","Feb")
+barplot(weight,names.arg=c("Shreyas","Sufiyan","Salman"),xlab="Persons",ylab="Weight",main="Weight_check",col=color)
+legend("topright",mon,cex=0.8,fill=color)

@@ -1,0 +1,6 @@
+h=c(23.5,34.6,37.9,40.4,25.6,6)
+t=c(13.2,15.3,26.7,25.6,27.1,17.9)
+year=c("2022","2021")
+plot(h,xlab="Month",ylab="Temperature",type="o",main="Mothly temperature",col="red")
+lines(t,col="green",type="o")
+legend("topleft",year,cex=0.8,fill=c("red","green"))

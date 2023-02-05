@@ -1,0 +1,6 @@
+library(plotrix)
+h=c(20,40,5,20,15)
+expenses=c("Sufiyan","Salman","Sammu","Subhani","Haseena")
+piepercent=round(100*h/sum(h), 1)
+pie3D(h,labels =piepercent,main="Expenses",,explode=0.1,col=rainbow(length(h)))
+legend("topleft",expenses,cex=0.5,fill=rainbow(length(h)))
